@@ -1,4 +1,4 @@
-# 유용한 메소드들을 모듈화 하여 간편하게 쓰기위한 프로젝트
+# A project to modularise useful methods for easy writing
 
 #### How to use
 
