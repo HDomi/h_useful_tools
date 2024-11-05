@@ -4,7 +4,8 @@
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
   "types": "dist/index.d.ts",
-  "version": "1.0.3",
+  "version": "1.0.31",
+  "private": false,
   "description": "유용한 메소드들을 모듈화 하여 간편하게 쓰기위한 프로젝트",
   "exports": {
     ".": {
@@ -16,8 +17,20 @@
     "build": "rm -fr dist/* && tsc -p tsconfig.json && tsc -p tsconfig-cjs.json && ./fixup.sh",
     "pub": "npm publish --access=public"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "typescript",
+    "component",
+    "tools"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HDomi/h_useful_tools"
+  },
+  "author": {
+    "name": "H_Domi",
+    "email": "hwangjae1139@gmail.com",
+    "url": "https://domi-blog-pearl.vercel.app/"
+  },
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.6.3"
