@@ -4,7 +4,7 @@
   "main": "dist/cjs/index.js",
   "module": "dist/mjs/index.js",
   "types": "dist/index.d.ts",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "유용한 메소드들을 모듈화 하여 간편하게 쓰기위한 프로젝트",
   "exports": {
     ".": {

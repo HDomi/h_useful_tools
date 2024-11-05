@@ -1,7 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Info = void 0;
-const Info = () => {
-    return `I'm Domi!`;
+const info = () => {
+    alert("This is a useful tools made by DOMI  !!!!!!!!!!!!!!!!!!!!!");
 };
-exports.Info = Info;
+const UFT = {
+    info,
+};
+exports.default = UFT;

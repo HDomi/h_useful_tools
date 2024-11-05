@@ -1,1 +1,4 @@
-export declare const Info: () => string;
+declare const UFT: {
+    info: () => void;
+};
+export default UFT;
