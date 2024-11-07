@@ -58,6 +58,24 @@ const isPasswordValid = (password) => {
     const passwordReg = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*(),.?":{}|<>]).{8,16}$/;
     return passwordReg.test(password);
 };
+const removeDuplicate = (arr) => {
+    if (!arr)
+        return [];
+    const setArr = new Set(arr);
+    return Array.from(setArr);
+};
+const orderByKey = (arr, key, order = "asc") => {
+    if (!arr)
+        return [];
+    return arr.sort((a, b) => {
+        if (order === "asc") {
+            return a[key] > b[key] ? 1 : -1;
+        }
+        else {
+            return a[key] < b[key] ? 1 : -1;
+        }
+    });
+};
 const UFT = {
     info,
     parseValue,
@@ -65,5 +83,7 @@ const UFT = {
     getRandomArr,
     isEmailValid,
     isPasswordValid,
+    removeDuplicate,
+    orderByKey,
 };
 export default UFT;
